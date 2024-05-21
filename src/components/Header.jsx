@@ -16,7 +16,7 @@ function Header() {
     <header className="header mt-lg-3 mt-xl-5 mt-4">
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor: "#7299B0"}}>
         <div className="container">
-          <a className="navbar-brand" href="#">Atheneas Group | Transformando datos en éxito, Potenciando tu empresa</a>
+          <button className="navbar-brand" style={{background: 'none', border: 'none', padding: '0', color: 'white'}}>Atheneas Group | Transformando datos en éxito, Potenciando tu empresa</button>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

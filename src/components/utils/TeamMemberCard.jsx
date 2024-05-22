@@ -1,19 +1,20 @@
 import React from 'react';
 import '../styles.css';
+import { Card, Button } from 'react-bootstrap';
 
-function TeamMemberCard({ name, role, imageSrc, offcanvasTarget }) {
+function TeamMemberCard({ name, role, imageSrc, onClick }) {
   return (
     <div className="col mb-3">
-      <div className="card h-100">
-        <img src={imageSrc} className="card-img-top" alt="..." style={{ width: 'auto', height: '370px' }} />
-        <div className="card-body">
-          <h5 className="card-title">{name}</h5>
-          <p className="card-text">{role}</p>
-          <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target={offcanvasTarget} aria-controls="offcanvasScrolling">
+      <Card className="h-100">
+        <Card.Img src={imageSrc} className="card-img-top" alt="..." style={{ width: 'auto', height: '370px' }} />
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>{role}</Card.Text>
+          <Button variant="primary" onClick={onClick}>
             Ver más
-          </button>
-        </div>
-      </div>
+          </Button>
+        </Card.Body>
+      </Card>
     </div>
   );
 }

@@ -1,17 +1,17 @@
 import React from 'react';
 import '../styles.css';
+import { Offcanvas } from 'react-bootstrap';
 
-function TeamMemberOffcanvas({ id, name, description }) {
+function TeamMemberOffcanvas({ id, name, description, show, onHide }) {
   return (
-    <div className="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id={id} aria-labelledby="offcanvasScrollingLabel">
-      <div className="offcanvas-header">
-        <h5 className="offcanvas-title" id="offcanvasScrollingLabel">{name}</h5>
-        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div className="offcanvas-body">
+    <Offcanvas show={show} onHide={onHide} placement="start" scroll={true} backdrop={false} id={id} aria-labelledby="offcanvasScrollingLabel">
+      <Offcanvas.Header closeButton>
+        <Offcanvas.Title>{name}</Offcanvas.Title>
+      </Offcanvas.Header>
+      <Offcanvas.Body>
         <p>{description}</p>
-      </div>
-    </div>
+      </Offcanvas.Body>
+    </Offcanvas>
   );
 }
 

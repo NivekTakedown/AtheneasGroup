@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Atheneas from './assets/Atheneas.png'; // Import the image
+import Atheneas from './assets/Atheneas.svg'; // Import the image
 
 function Hero() {
   return (

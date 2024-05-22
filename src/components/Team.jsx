@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TeamMemberCard from './utils/TeamMemberCard.jsx';
 import TeamMemberOffcanvas from './utils/TeamMemberOffcanvas.jsx';
 import sebasImg from './assets/Sebastian.png';
 import kevinImg from './assets/kevin.jpg';
 
-
 function Team() {
+  const [showOffcanvas, setShowOffcanvas] = useState(null);
+
+  const handleShowOffcanvas = (id) => {
+    setShowOffcanvas(id);
+  };
+
+  const handleCloseOffcanvas = () => {
+    setShowOffcanvas(null);
+  };
+
   const teamMembers = [
     {
       id: 'offcanvasScrolling3',
@@ -34,7 +43,7 @@ function Team() {
               name={member.name}
               role={member.role}
               imageSrc={member.imageSrc}
-              offcanvasTarget={`#${member.id}`}
+              onClick={() => handleShowOffcanvas(member.id)}
             />
           ))}
         </div>
@@ -46,6 +55,8 @@ function Team() {
           id={member.id}
           name={member.name}
           description={member.description}
+          show={showOffcanvas === member.id}
+          onHide={handleCloseOffcanvas}
         />
       ))}
     </section>

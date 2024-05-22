@@ -1,23 +1,24 @@
 import React from 'react';
 import '../styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-function ServiceDetailsCard({id, title, description, imageUrl, altText, listItems, buttonText, buttonLink }) {
+function ServiceDetailsCard({serviceId, imageContainerClass, detailsContainerClass, serviceTitle, serviceDescription, serviceImage, altText, serviceListItems, buttonText, buttonLink }) {
   return (
-    <section id={id} className="service-details">
+    <section id={serviceId} className="service-details">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
-            <img src={imageUrl} alt={altText} className="img-fluid" />
+          <div className={imageContainerClass}>
+            <img src={serviceImage} alt={altText} className="img-fluid" />
           </div>
-          <div className="col-lg-6">
-            <h2>{title}</h2>
-            {description.map((paragraph, index) => (
+          <div className={detailsContainerClass}>
+            <h2>{serviceTitle}</h2>
+            {serviceDescription.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
-            {listItems && (
+            {serviceListItems && (
               <ul>
-                {listItems.map((item, index) => (
+                {serviceListItems.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>

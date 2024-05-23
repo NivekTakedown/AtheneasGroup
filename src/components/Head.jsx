@@ -9,8 +9,10 @@ import './styles.css';
 function Head() {
   return (
     <Helmet>
+      <html lang="es" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Atheneas Group | Transformando datos en éxito, Potenciando tu empresa</title>
+      <link rel="canonical" href="https://nivektakedown.github.io/AtheneasGroup/" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
       <link rel="apple-touch-icon" sizes="180x180" href={atheneasAppleIcon} />
       <link rel="icon" type="image/png" sizes="32x32" href={atheneasFavicon32} />
@@ -25,6 +27,16 @@ function Head() {
       <meta property="og:url" content="https://nivektakedown.github.io/AtheneasGroup/" />
       <meta property="og:image" content="https://nivektakedown.github.io/AtheneasGroup/assets/apple-touch-icon.png" />
       <meta property="og:type" content="website" />
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://nivektakedown.github.io/AtheneasGroup/",
+            "logo": "https://nivektakedown.github.io/AtheneasGroup/assets/apple-touch-icon.png"
+          }
+        `}
+      </script>
     </Helmet>
   );
 }

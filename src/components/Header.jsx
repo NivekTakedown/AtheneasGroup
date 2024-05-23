@@ -1,7 +1,8 @@
 import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import './styles.css';
+import logo from './assets/Atheneas.svg'; 
 
-// Definición de los elementos de navegación
 const navItems = [
   { href: "#", text: "Inicio" },
   { href: "#servicios", text: "Servicios" },
@@ -10,27 +11,24 @@ const navItems = [
   { href: "#contacto", text: "Contacto" },
 ];
 
-// Componente Header
 function Header() {
   return (
     <header className="header mt-lg-3 mt-xl-5 mt-4">
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor: "#7299B0"}}>
-        <div className="container">
-          <button className="navbar-brand" style={{background: 'none', border: 'none', padding: '0', color: 'white'}}>Atheneas Group | Transformando datos en éxito, Potenciando tu empresa</button>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-            <ul className="navbar-nav">
+      <Navbar collapseOnSelect expand="lg" variant="dark" fixed="top" className="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+        <Container>
+          <Navbar.Brand href="#">
+            <img src={logo} alt="Logo" className="logo"/>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav" className="collapse navbar-collapse justify-content-end">
+            <Nav className="navbar-nav">
               {navItems.map((item, index) => (
-                <li key={index} className={`nav-item ${item.href === '#' ? 'active' : ''}`}>
-                  <a className="nav-link" href={item.href}>{item.text}</a>
-                </li>
+                <Nav.Link key={index} href={item.href} className={`nav-item ${item.href === '#' ? 'active' : ''}`}>{item.text}</Nav.Link>
               ))}
-            </ul>
-          </div>
-        </div>
-      </nav>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </header>
   );
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AtheneasGroup/static/css/main.c1a44433.css",
-    "main.js": "/AtheneasGroup/static/js/main.acdeeadd.js",
+    "main.css": "/AtheneasGroup/static/css/main.9ad18dfd.css",
+    "main.js": "/AtheneasGroup/static/js/main.59c48519.js",
     "static/js/453.77ab3c2f.chunk.js": "/AtheneasGroup/static/js/453.77ab3c2f.chunk.js",
     "static/media/Sebastian.png": "/AtheneasGroup/static/media/Sebastian.3c4146f33fc3ab4111bb.png",
     "static/media/kevin.jpg": "/AtheneasGroup/static/media/kevin.b2bb22efda98176c529e.jpg",
@@ -24,12 +24,12 @@
     "static/media/fa-v4compatibility.ttf": "/AtheneasGroup/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/AtheneasGroup/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/AtheneasGroup/index.html",
-    "main.c1a44433.css.map": "/AtheneasGroup/static/css/main.c1a44433.css.map",
-    "main.acdeeadd.js.map": "/AtheneasGroup/static/js/main.acdeeadd.js.map",
+    "main.9ad18dfd.css.map": "/AtheneasGroup/static/css/main.9ad18dfd.css.map",
+    "main.59c48519.js.map": "/AtheneasGroup/static/js/main.59c48519.js.map",
     "453.77ab3c2f.chunk.js.map": "/AtheneasGroup/static/js/453.77ab3c2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1a44433.css",
-    "static/js/main.acdeeadd.js"
+    "static/css/main.9ad18dfd.css",
+    "static/js/main.59c48519.js"
   ]
 }

@@ -1,0 +1,14 @@
+/* Tema diurno */
+:root {
+    --color-primario: #607279;
+    --color-secundario: #0a222a;
+    --color-texto: #333;
+    --color-fondo: #fff;
+  }
+  
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+  }
+  
+  /* Otros estilos para el tema diurno */

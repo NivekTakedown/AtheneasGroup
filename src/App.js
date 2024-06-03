@@ -1,35 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import Header from './components/Header.jsx';
-import Hero from './components/Hero.jsx';
-import Services from './components/Services.jsx';
-import CasesOfSuccess from './components/CasesOfSuccess.jsx';
-import Team from './components/Team.jsx';
-import Contact from './components/Contact.jsx';
-import Footer from './components/Footer.jsx';
-import Head from './components/Head.jsx';
+import Home from './components/Page/Home.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ArticlesPage from './components/Page/ArticlesPage.jsx';
 
 
 function App() {
   return (
-    <html>
-      <Head />
-      <body>
-        {
-        <div className="app">
-        <Header />
-        <main>
-          <Hero />
-          <Services />
-          <CasesOfSuccess />
-          <Team />
-          <Contact />
-        </main>
-        <Footer />
+    <Router>
+      <div>
+        <Routes>
+          <Route exact path="/AtheneasGroup" element={<Home />} />
+          <Route path="*" element={<Home />} />
+          <Route path="/article/:id" element={<ArticlesPage />} />
+        </Routes>
       </div>
-      }
-      </body>
-    </html>
+    </Router>
     
   );
 }

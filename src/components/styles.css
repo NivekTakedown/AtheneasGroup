@@ -1,221 +1,308 @@
- /* Cambiar el color de fondo de la página */
- body {
-    background-color: #ffffff; 
-  }
-  .navbar-brand {
-font-size: 1.25rem;
+/* Estilos generales */
+body {
+  background-color: #ffffff;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-primary {
+  color: #7299B0 !important;
+}
+
+.btn-primary {
+  background-color: #7299B0;
+  border-color: #7299B0;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #052455;
+  border-color: #052455;
+}
+
+/* Estilos para el navbar */
 .navbar-custom {
   background-color: #7299B0;
   padding: 0 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
 }
 
 .logo {
   height: 40px;
   border-radius: 50%;
 }
-.text-primary {
-  --bs-text-opacity: 1;
-  color:  #7299B0 !important;
-}
+
 @media (max-width: 576px) {
-.navbar-brand {
-  font-size: 1rem;
-}
-}
-.custom-button {
-background-color: #7299B0;
-border-color: #052455;
-color: white;
-}
-.scale-in-hor-right {
-  -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
-          animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+  .navbar-brand {
+    font-size: 1rem;
+  }
 }
 
-@-webkit-keyframes scale-in-hor-right {
-0% {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
+/* Estilos para el hero */
+.hero {
+  margin-top: 80px;
+  padding: 100px 0;
+  background-color: #ffffff;
+  color: #052455;
+  text-align: center;
+}
+
+.hero .img-fluid {
   opacity: 1;
+  background-color: transparent;
 }
-100% {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-  opacity: 1;
-}
-}
-@keyframes scale-in-hor-right {
-0% {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-  opacity: 1;
-}
-100% {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-  opacity: 1;
-}
-}
+
 /* Estilos para las secciones de servicios */
 .servicios {
-        padding: 80px 0;
-      }
-      
-      .servicios h2 {
-        font-size: 36px;
-        font-weight: bold;
-        margin-bottom: 40px;
-        color: #052455;
-      }
-      
-      .servicios .card {
-        border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-      }
-      
-      .servicios .card:hover {
-        transform: translateY(-10px);
-      }
-      
-      .servicios .card-body {
-        padding: 30px;
-        text-align: center;
-      }
-      
-      .servicios .card-title {
-        font-size: 24px;
-        font-weight: bold;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: #052455;
-      }
-      
-      .servicios .card-title a {
-        color: #052455;
-        text-decoration: none;
-      }
-      
-      .servicios .card-text {
-        font-size: 16px;
-        color: #555;
-        margin-bottom: 20px;
-      }
-      
-      .servicios .btn-primary {
-        background-color: #7299B0;
-        border-color: #7299B0;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-      
-      .servicios .btn-primary:hover {
-        background-color: #052455;
-        border-color: #052455;
-      }
-      
-      .servicios .fa-5x {
-        font-size: 5em;
-        color: #7299B0;
-        margin-bottom: 20px;
-        transition: color 0.3s ease;
-      }
-      
-      .servicios .card:hover .fa-5x {
-        color: #052455;
-      }
+  padding: 80px 0;
+}
 
-      /* Estilos para la sección de detalles de servicios */
-      .service-details {
-        padding: 100px 0;
-        background-color: #ffffff;
-        max-width: 80%; /* Agregado para reducir el ancho del contenedor */
-        margin: auto; /* Agregado para centrar el contenedor */
-    }
-    
-    .service-details:nth-child(odd) {
-        background-color: #f8f9fa;
-    }
-    
-    .service-details h2 {
-        font-size: 36px;
-        font-weight: bold;
-        margin-bottom: 30px;
-        color: #052455;
-    }
-    
-    .service-details p {
-        font-size: 18px;
-        color: #555;
-        margin-bottom: 30px;
-        line-height: 1.6;
-    }
-    
-    .service-details ul {
-        margin-bottom: 30px;
-        padding-left: 20px;
-        list-style-type: none;
-    }
-    
-    .service-details ul li {
-        font-size: 18px;
-        color: #555;
-        margin-bottom: 10px;
-        line-height: 1.6;
-        position: relative;
-        padding-left: 25px;
-    }
-    
-    .service-details ul li:before {
-        content: "\f058";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        position: absolute;
-        left: 0;
-        color: #7299B0;
-    }
-    
-    .service-details .btn-primary {
-        background-color: #7299B0;
-        border-color: #7299B0;
-        font-weight: bold;
-        transition: background-color 0.3s ease, border-color 0.3s ease;
-        margin-top: 30px;
-        padding: 12px 30px;
-    }
-    
-    .service-details .btn-primary:hover {
-        background-color: #052455;
-        border-color: #052455;
-    }
-    
-    .service-details img {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        transition: transform 0.3s ease;
-    }
-    
-    .service-details img:hover {
-        transform: translateY(-5px);
-    }
-    
-    @media (max-width: 991px) {
-        .service-details img {
-            margin-top: 40px;
-        }
-    }
-    
-    .service-details .row {
-        align-items: center;
-    }
+.servicios h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #052455;
+}
+
+.servicios .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.servicios .card:hover {
+  transform: translateY(-10px);
+}
+
+.servicios .card-body {
+  padding: 30px;
+  text-align: center;
+}
+
+.servicios .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #052455;
+}
+
+.servicios .card-title a {
+  color: #052455;
+  text-decoration: none;
+}
+
+.servicios .card-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.servicios .fa-5x {
+  font-size: 5em;
+  color: #7299B0;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.servicios .card:hover .fa-5x {
+  color: #052455;
+}
+
+/* Estilos para la sección de detalles de servicios */
+.service-details {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-details h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #052455;
+  margin-bottom: 20px;
+}
+
+.service-details p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.service-details ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.service-details ul li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 25px;
+}
+
+.service-details ul li:before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #7299B0;
+}
+
+.service-details img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.service-details img:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 991px) {
+  .service-details img {
+    margin-top: 40px;
+  }
+}
+
+.service-details .row {
+  align-items: center;
+}
+
+/* Estilos para la sección de detalles de artículos */
+.article-details {
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+.article-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article-details img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .article-title {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .article-title {
+    font-size: 1.5em;
+  }
+}
+
+/* Estilos para la sección de suscripción */
+.subscribe-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.subscribe-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #052455;
+  margin-bottom: 20px;
+}
+
+.subscribe-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.subscribe-form .input-group {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form .form-control {
+  width: 60%;
+  max-width: 500px;
+  border: 1px solid #7299B0;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+
+.subscribe-form .btn-primary {
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
+.carousel {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+}
+
+.carousel-caption h3 {
+  font-size: 36px; /* Ajusta el tamaño del título */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.carousel-caption button {
+  font-size: 14px; /* Ajusta el tamaño del botón */
+  padding: 10px 20px; /* Ajusta el padding del botón */
+}
+
+@media (max-width: 767px) {
+  .carousel-caption {
+    position: static;
+    background-color: transparent;
+    color: inherit;
+    padding: 10px;
+  }
+}

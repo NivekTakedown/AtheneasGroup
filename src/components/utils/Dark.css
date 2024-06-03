@@ -1,0 +1,14 @@
+/* Tema oscuro */
+:root {
+    --color-primario: #607279;
+    --color-secundario: #0a222a;
+    --color-texto: #fff;
+    --color-fondo: #0a222a;
+  }
+  
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+  }
+  
+  /* Otros estilos para el tema oscuro */

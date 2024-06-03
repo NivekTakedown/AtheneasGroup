@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Atheneas from './assets/Atheneas.svg'; // Import the image
+import { ReactComponent as Atheneas } from './assets/Atheneas.svg'; // Import the SVG as a component
 
 function Hero() {
   return (
@@ -13,7 +13,7 @@ function Hero() {
             <a href="#contacto" className="btn btn-primary custom-button wow fadeInUp" data-wow-delay="0.4s">Contáctanos</a>
           </div>
           <div className="col-md-6 text-center">
-            <img src={Atheneas} className="img-fluid wow fadeInUp scale-in-hor-right" alt="Imagen de tecnología" />
+            <Atheneas className="img-fluid wow fadeInUp scale-in-hor-right" alt="Imagen de tecnología" />
           </div>
         </div>
       </div>

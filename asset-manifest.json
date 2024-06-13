@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AtheneasGroup/static/css/main.93928936.css",
-    "main.js": "/AtheneasGroup/static/js/main.5d3e2972.js",
+    "main.js": "/AtheneasGroup/static/js/main.ac74b8bd.js",
     "static/js/453.77ab3c2f.chunk.js": "/AtheneasGroup/static/js/453.77ab3c2f.chunk.js",
     "static/media/Sebastian.png": "/AtheneasGroup/static/media/Sebastian.3c4146f33fc3ab4111bb.png",
     "static/media/kevin.jpg": "/AtheneasGroup/static/media/kevin.b2bb22efda98176c529e.jpg",
@@ -85,11 +85,11 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/AtheneasGroup/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/AtheneasGroup/index.html",
     "main.93928936.css.map": "/AtheneasGroup/static/css/main.93928936.css.map",
-    "main.5d3e2972.js.map": "/AtheneasGroup/static/js/main.5d3e2972.js.map",
+    "main.ac74b8bd.js.map": "/AtheneasGroup/static/js/main.ac74b8bd.js.map",
     "453.77ab3c2f.chunk.js.map": "/AtheneasGroup/static/js/453.77ab3c2f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93928936.css",
-    "static/js/main.5d3e2972.js"
+    "static/js/main.ac74b8bd.js"
   ]
 }
